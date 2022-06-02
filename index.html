@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="Brylin Roman">
+		<title>Лабораторная работа №5</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<form>
+			<h1>Калькулятор дней</h1>
+			<div class="left_column">
+				<fieldset>
+					<legend>Определить</legend>
+					<label><input type="radio" name="count">Количество дней</label>
+					<label><input type="radio" name="count">Количество выходных</label>
+					<label><input type="radio" name="count">Количество рабочих дней</label>
+					<label><input type="radio" name="count">Количество полных недель</label>
+					<label><input type="radio" name="count">Количество полных месяцев</label>
+				</fieldset>
+				<div class="result_block"><label for="result">Результат</label><input type="text" id="result"></div>
+				<input type="button" value="Вычислить">
+			</div>
+			<div class="right_column">
+				<label for="start"></label>Начало периода<input id="start" type="text">
+				<label for="end"></label>Конец периода<input id="end" type="date">
+			</div>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>
