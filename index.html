@@ -18,12 +18,12 @@
 					<label><input type="radio" name="count">Количество полных недель</label>
 					<label><input type="radio" name="count">Количество полных месяцев</label>
 				</fieldset>
-				<div class="result_block"><label for="result">Результат</label><input type="text" id="result"></div>
-				<input type="button" value="Вычислить">
+				<div class="result_block"><label for="result">Результат</label><input type="text" id="result" readonly></div>
+				<input type="button" value="Вычислить" disabled>
 			</div>
 			<div class="right_column">
-				<label for="start"></label>Начало периода<input id="start" type="text">
-				<label for="end"></label>Конец периода<input id="end" type="date">
+				<label for="start">Начало периода</label><input id="start" type="text" placeholder="дд.мм.гггг">
+				<label for="end">Конец периода</label><input id="end" type="date">
 			</div>
 		</form>
 		<script src="script.js"></script>

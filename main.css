@@ -53,6 +53,7 @@ input {
 	cursor: pointer;
 	border: none;
 	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .result_block {
 	margin-top: 30px;
@@ -63,20 +64,29 @@ label[for="result"] {
 }
 input[type="text"] {
 	cursor: text;
-	width: 100px;
+	width: 130px;
 	border-radius: 5px;
 	padding: 5px;
 }
 input[type="button"] {
 	font-size: 16pt;
-	color: rgb(187,140,97);
+	color: rgb(210,210,210, .5);
 	font-weight: bold;
-	background-color: rgb(248,220,138);
+	background-color: rgb(128,128,128, .5);
 	width: 100%;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	height: 50px;
 	border-radius: 15px;
+	transform: scale(.8);
+	transition: .5s;
+	cursor: default;
+}
+input[type="button"].active {
+	transform: scale(1);
+	color: rgb(187,140,97);
+	background-color: rgb(248,220,138);
+	cursor: pointer;
 }
 .right_column {
 	display: flex;
